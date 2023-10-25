@@ -736,7 +736,7 @@ figure {
   content: " ";
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 760px) {
   .timeline>li>.timeline-panel {
     width: 75% !important;
   }
@@ -831,7 +831,7 @@ figure {
   }
 
   ul.timeline>li>.timeline-badge {
-    left: 83px;
+    left: 43px;
     margin-left: 0;
     top: 93px;
   }
