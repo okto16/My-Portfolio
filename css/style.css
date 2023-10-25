@@ -29,6 +29,17 @@ body {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
+@media screen and (max-width: 780px) {
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* Mengatur lebar kolom untuk foto dan deskripsi */
+    gap: 10px;
+    /* Jarak antara kolom */
+  }
+}
+
 
 .grid-container {
   display: grid;
@@ -101,6 +112,58 @@ body {
   align-items: left;
 }
 
+@media (max-width: 768px) {
+  /* CSS untuk perangkat mobile (lebar maksimum 768px) */
+  .skill-item {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Jarak antara gambar dan teks */
+    margin-bottom: 2px;
+  }
+  .skill-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+  .skill-logo {
+    width: 30px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 15px rgb(204, 204, 204);
+  }
+  .progress-container {
+    display: flex;
+    border: none;
+    padding: 0.5px;
+    text-align: left;
+    flex-direction: column; /* Letakkan teks di atas progress */
+    align-items: left;
+  }
+  .project-logo {
+    width: 50px;
+    border-radius: 7px;
+  }
+  .project-item {
+    display: flex;
+    border: none;
+    border-radius: 5px;
+    background-color: #232423;
+    align-items: center;
+    gap: 10px; /* Jarak antara gambar dan teks */
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 15px rgb(204, 204, 204);
+  }
+  .project-item2 {
+    display: flex;
+    border: none;
+    color: #000;
+    border-radius: 5px;
+    background-color: #dce0dce8;
+    align-items: center;
+    gap: 10px; /* Jarak antara gambar dan teks */
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 15px rgb(204, 204, 204);
+  }
+}
 h3 {
   margin: 0; /* Menghapus margin bawaan dari h3 */
   align-items: left;
@@ -710,11 +773,10 @@ figure {
   border-radius: 50%;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 780px) {
   .timeline>li>.timeline-badge {
-    width: 60px;
-    height: 60px;
-    margin-left: -20px !important;
+    color: #fff;
+    background-color: #00e1ff;
   }
 }
 
@@ -769,9 +831,9 @@ figure {
   }
 
   ul.timeline>li>.timeline-badge {
-    left: 15px;
+    left: 83px;
     margin-left: 0;
-    top: 16px;
+    top: 93px;
   }
 
   ul.timeline>li>.timeline-panel {
