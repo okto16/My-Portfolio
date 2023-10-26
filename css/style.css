@@ -831,9 +831,9 @@ figure {
   }
 
   ul.timeline>li>.timeline-badge {
-    left: 19px;
+    left: -15px;
     margin-left: 0;
-    top: 43px;
+    top: -1px;
   }
 
   ul.timeline>li>.timeline-panel {
