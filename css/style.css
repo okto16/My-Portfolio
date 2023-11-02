@@ -1497,6 +1497,13 @@ form label {
   .fh5co-heading h2 {
     font-size: 40px;
   }
+  .fh5co-heading span {
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.89);
+}
 }
 
 .fh5co-heading p {
