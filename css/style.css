@@ -10,11 +10,14 @@
   width: 300px;
 }
 .project-card {
-  width: 1133px;
+  width: 967px;
 }
+  .container {
+      max-width: 912px;
+  }
 
 .items-card {
-  width: 700px;
+  width: 624px;
   height: 300px;
   position: relative;
 }
@@ -27,27 +30,27 @@
 }
 .items-card .portofolio {
   position: absolute;
-  width: 600px;
+  width: 534px;
   top: 50px;
 }
 .window-dekstop {
-  width: 1070px;
+  width: 983px;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
 }
-@media (max-width: 768px) {
+@media only screen and (min-width: 1068px) {
   .window-dekstop {
-    width: 630px;
+    width: 1133px;
   }
   .items-card {
-    width: 500px;
+    width: 700px;
   }
   .project-card {
-    width: 533px;
+    width: 1133px;
   }
   .text-wrapper {
-    font-size: 2px;
+    font-size: 8px;
     height: 159px;
   }
 }
