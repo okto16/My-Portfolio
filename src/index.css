@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.color-change {
+    text-align: center;
+    background: linear-gradient(55deg, #fcfcfc, #004cff, #ffffff);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: colorChange 5s ease infinite;
+  }
+  
+  @keyframes colorChange {
+    0% { background-position: 0%; }
+    50% { background-position: 100%; }
+    100% { background-position: 0%; }
+  }
+  
+  
