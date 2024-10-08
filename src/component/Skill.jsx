@@ -1,4 +1,14 @@
 import { motion } from "framer-motion";
+import Css from "../assets/css.png";
+import Vue from "../assets/vue.png";
+// import Laravel from "../assets/laravel.png";
+// import Javascript from "../assets/javascript.png";
+import React from "../assets/react.png";
+import Mysql from "../assets/mysql.png";
+import Tailwind from "../assets/tailwind.png";
+import Bootstrap from "../assets/bootstrap.png";
+// import Git from "../assets/git.png";
+
 const Skill = () => {
   return (
     <>
@@ -46,7 +56,7 @@ const Skill = () => {
           }}
         >
           <div className="flex gap-2 badge rounded py-6 px-10 hover:bg-white hover:text-black hover:animate-pulse">
-            <img className="w-7" src="src/assets/css.png" alt="" />
+            <img className="w-7" src={Css} alt="" />
             <span className="text-lg">CSS</span>
           </div>
         </motion.dev>
@@ -162,7 +172,7 @@ const Skill = () => {
           }}
         >
           <div className="flex gap-2 badge rounded py-6 px-10 hover:bg-white hover:text-black hover:animate-pulse">
-            <img className="w-7" src="src/assets/vue.png" alt="" />
+            <img className="w-7" src={Vue} alt="" />
             <span className="text-lg">Vue</span>
           </div>
         </motion.dev>
@@ -182,7 +192,7 @@ const Skill = () => {
           }}
         >
           <div className="flex gap-2 badge rounded py-6 px-10 hover:bg-white hover:text-black hover:animate-pulse">
-            <img className="w-7" src="src/assets/react.png" alt="" />
+            <img className="w-7" src={React} alt="" />
             <span className="text-lg">React</span>
           </div>
         </motion.dev>
@@ -202,7 +212,7 @@ const Skill = () => {
           }}
         >
           <div className="flex gap-2 badge rounded py-6 px-10 hover:bg-white hover:text-black hover:animate-pulse">
-            <img className="w-7" src="src/assets/mysql.png" alt="" />
+            <img className="w-7" src={Mysql} alt="" />
             <span className="text-lg">Mysql</span>
           </div>
         </motion.dev>
@@ -222,7 +232,7 @@ const Skill = () => {
           }}
         >
           <div className="flex gap-2 badge rounded py-6 px-10 hover:bg-white hover:text-black hover:animate-pulse">
-            <img className="w-7" src="src/assets/tailwind.png" alt="" />
+            <img className="w-7" src={Tailwind} alt="" />
             <span className="text-lg">Tailwind</span>
           </div>
         </motion.dev>
@@ -243,7 +253,7 @@ const Skill = () => {
           }}
         >
           <div className="flex gap-2 badge rounded py-6 px-6 hover:bg-white hover:text-black hover:animate-pulse">
-            <img className="w-7" src="src/assets/bootstrap.png" alt="" />
+            <img className="w-7" src={Bootstrap} alt="" />
             <span className="text-lg">Bootstrap</span>
           </div>
         </motion.dev>

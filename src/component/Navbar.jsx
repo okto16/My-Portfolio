@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import avatar from "../assets/avatar.png";
 const Navbar = () => {
   const navigate = useNavigate();
 
@@ -19,7 +20,7 @@ const Navbar = () => {
       <div className="flex-1 space-x-5">
         <div className="avatar">
           <div className="ring-primary ring-offset-base-100 w-20 rounded-full ring ring-offset-2">
-            <img src="https://oktorino.vercel.app/images\avatar.png" />
+            <img src={avatar} />
           </div>
         </div>
         <div>
