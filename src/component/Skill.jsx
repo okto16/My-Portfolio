@@ -196,7 +196,7 @@ const Skill = () => {
           }}
         >
           <div className="flex gap-2 badge rounded px-6 py-4 lg:py-6 lg:px-10 hover:bg-white hover:text-black hover:animate-pulse">
-            <img className="w-3 lg:w-7" src={React} alt="" />
+            <img className="w-3 lg:w-7 animate-spin-slow" src={React} alt="" />
             <span className="text-[10px] lg:text-lg">React</span>
           </div>
         </motion.dev>
