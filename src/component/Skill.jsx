@@ -1,8 +1,12 @@
 import { motion } from "framer-motion";
 import Css from "../assets/css.png";
 import Vue from "../assets/vue.png";
-// import Laravel from "../assets/laravel.png";
-// import Javascript from "../assets/javascript.png";
+import Laravel from "../assets/laravel.png";
+import Javascript from "../assets/javascript.png";
+// import Nodejs from "../assets/nodejs.png";
+import Codeigniter from "../assets/ci.png";
+import Html from "../assets/html.png";
+import Php from "../assets/php.png";
 import React from "../assets/react.png";
 import Mysql from "../assets/mysql.png";
 import Tailwind from "../assets/tailwind.png";
@@ -34,7 +38,7 @@ const Skill = () => {
           <div className="flex gap-2 badge rounded py-6 px-10 hover:bg-white hover:text-black hover:animate-pulse">
             <img
               className="w-7"
-              src="https://oktorino.vercel.app/images/HTML5.png"
+              src={Html}
               alt=""
             />
             <span className="text-lg">HTML</span>
@@ -78,7 +82,7 @@ const Skill = () => {
           <div className="flex gap-2 badge rounded py-6 px-6 hover:bg-white hover:text-black hover:animate-pulse">
             <img
               className="w-7"
-              src="https://oktorino.vercel.app/images/javascript.png"
+              src={Javascript}
               alt=""
             />
             <span className="text-lg">Javascript</span>
@@ -102,7 +106,7 @@ const Skill = () => {
           <div className="flex gap-2 badge rounded py-6 px-12 hover:bg-white hover:text-black hover:animate-pulse">
             <img
               className="w-7"
-              src="https://oktorino.vercel.app/images/php.svg"
+              src={Php}
               alt=""
             />
             <span className="text-lg">PHP</span>
@@ -126,7 +130,7 @@ const Skill = () => {
           <div className="flex gap-2 badge rounded py-6 px-6 hover:bg-white hover:text-black hover:animate-pulse">
             <img
               className="w-7"
-              src="https://oktorino.vercel.app/images/codeigniter.svg"
+              src={Codeigniter}
               alt=""
             />
             <span className="text-lg">Codeigniter</span>
@@ -150,7 +154,7 @@ const Skill = () => {
           <div className="flex gap-2 badge rounded py-6 px-9 hover:bg-white hover:text-black hover:animate-pulse">
             <img
               className="w-7"
-              src="https://oktorino.vercel.app/images/laravel.svg"
+              src={Laravel}
               alt=""
             />
             <span className="text-lg">Laravel</span>

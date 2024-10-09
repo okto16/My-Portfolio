@@ -1,5 +1,15 @@
 import { motion } from "framer-motion";
 import dashboard from "../assets/dashboard.png"
+import github from "../assets/github.png"
+import laravel from "../assets/laravel.png"
+import vue from "../assets/vue.png"
+import tailwind from "../assets/tailwind.png"
+import mysql from "../assets/mysql.png"
+import bootstrap from "../assets/bootstrap.png"
+import ci from "../assets/ci.png"
+import php from "../assets/php.png"
+import react from "../assets/react.png"
+
 const Project = () => {
   return (
     <>
@@ -28,14 +38,14 @@ const Project = () => {
             </div>
             <div className="flex justify-around">
               <div className="flex gap-2">
-                <img className="size-8" src="src/assets/laravel.png" alt="" />
-                <img className="size-8" src="src/assets/vue.png" alt="" />
-                <img className="size-8" src="src/assets/tailwind.png" alt="" />
-                <img className="size-8" src="src/assets/mysql.png" alt="" />
+                <img className="size-8" src={laravel} alt="" />
+                <img className="size-8" src={vue} alt="" />
+                <img className="size-8" src={tailwind} alt="" />
+                <img className="size-8" src={mysql} alt="" />
               </div>
               <div className="">
                 <a href="https://github.com/okto16/Pet-Shop">
-                  <img className="size-10" src="src/assets/github.png" alt="" />
+                  <img className="size-10" src={github} alt="" />
                 </a>
               </div>
             </div>
@@ -67,10 +77,10 @@ const Project = () => {
             </div>
             <div className="flex justify-around">
               <div className="flex gap-2">
-                <img className="size-8" src="src/assets/laravel.png" alt="" />
-                <img className="size-8" src="src/assets/vue.png" alt="" />
-                <img className="size-8" src="src/assets/tailwind.png" alt="" />
-                <img className="size-8" src="src/assets/mysql.png" alt="" />
+                <img className="size-8" src={laravel} alt="" />
+                <img className="size-8" src={vue} alt="" />
+                <img className="size-8" src={tailwind} alt="" />
+                <img className="size-8" src={mysql} alt="" />
               </div>
               <div className="">
                 <a href="https://github.com/okto16/midtrans-api-sales">
@@ -106,9 +116,9 @@ const Project = () => {
             </div>
             <div className="flex justify-around">
               <div className="flex gap-2">
-                <img className="size-8" src="src/assets/laravel.png" alt="" />
-                <img className="size-8" src="src/assets/bootstrap.png" alt="" />
-                <img className="size-8" src="src/assets/mysql.png" alt="" />
+                <img className="size-8" src={laravel} alt="" />
+                <img className="size-8" src={bootstrap} alt="" />
+                <img className="size-8" src={php} alt="" />
               </div>
               <div className="">
                 <a href="https://github.com/okto16/Library">
@@ -144,9 +154,9 @@ const Project = () => {
             </div>
             <div className="flex justify-around">
               <div className="flex gap-2">
-                <img className="size-8" src="src/assets/laravel.png" alt="" />
-                <img className="size-8" src="src/assets/react.png" alt="" />
-                <img className="size-8" src="src/assets/tailwind.png" alt="" />
+                <img className="size-8" src={laravel} alt="" />
+                <img className="size-8" src={react} alt="" />
+                <img className="size-8" src={tailwind} alt="" />
               </div>
               <div className="">
                 <a href="https://github.com/okto16/Rakamin-Qwords">
@@ -179,9 +189,9 @@ const Project = () => {
             </div>
             <div className="flex justify-around">
               <div className="flex gap-2">
-                <img className="size-8" src="src/assets/ci.png" alt="" />
-                <img className="size-8" src="src/assets/bootstrap.png" alt="" />
-                <img className="size-8" src="src/assets/mysql.png" alt="" />
+                <img className="size-8" src={ci} alt="" />
+                <img className="size-8" src={bootstrap} alt="" />
+                <img className="size-8" src={mysql} alt="" />
               </div>
               <div className="">
                 <a href="https://github.com/okto16/web-project-ecommerce">
