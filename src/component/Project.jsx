@@ -84,7 +84,7 @@ const Project = () => {
               </div>
               <div className="">
                 <a href="https://github.com/okto16/midtrans-api-sales">
-                  <img className="size-10" src="src/assets/github.png" alt="" />
+                  <img className="size-10" src={github} alt="" />
                 </a>
               </div>
             </div>
@@ -122,7 +122,7 @@ const Project = () => {
               </div>
               <div className="">
                 <a href="https://github.com/okto16/Library">
-                  <img className="size-10" src="src/assets/github.png" alt="" />
+                  <img className="size-10" src={github} alt="" />
                 </a>
               </div>
             </div>
@@ -160,7 +160,7 @@ const Project = () => {
               </div>
               <div className="">
                 <a href="https://github.com/okto16/Rakamin-Qwords">
-                  <img className="size-10" src="src/assets/github.png" alt="" />
+                  <img className="size-10" src={github} alt="" />
                 </a>
               </div>
             </div>
@@ -195,7 +195,7 @@ const Project = () => {
               </div>
               <div className="">
                 <a href="https://github.com/okto16/web-project-ecommerce">
-                  <img className="size-10" src="src/assets/github.png" alt="" />
+                  <img className="size-10" src={github} alt="" />
                 </a>
               </div>
             </div>
