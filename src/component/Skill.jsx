@@ -17,7 +17,7 @@ const Skill = () => {
   return (
     <>
       <div className="skill flex justify-center mb-10">
-        <h1 className="text-3xl font-bold">My Skill</h1>
+        <h1 className="text-md lg:text-3xl font-bold">My Skill</h1>
       </div>
       <div className="grid grid-cols-5 justify-center gap-4">
         <motion.dev
@@ -35,13 +35,13 @@ const Skill = () => {
             bounceStiffness: 100,
           }}
         >
-          <div className="flex gap-2 badge rounded py-6 px-10 hover:bg-white hover:text-black hover:animate-pulse">
+          <div className="flex gap-2 badge rounded px-5 py-4 lg:py-6 lg:px-10 hover:bg-white hover:text-black hover:animate-pulse">
             <img
-              className="w-7"
+              className="w-3 lg:w-7"
               src={Html}
               alt=""
             />
-            <span className="text-lg">HTML</span>
+            <span className="text-[10px] lg:text-lg">HTML</span>
           </div>
         </motion.dev>
         <motion.dev
@@ -59,9 +59,9 @@ const Skill = () => {
             bounceStiffness: 100,
           }}
         >
-          <div className="flex gap-2 badge rounded py-6 px-10 hover:bg-white hover:text-black hover:animate-pulse">
-            <img className="w-7" src={Css} alt="" />
-            <span className="text-lg">CSS</span>
+          <div className="flex gap-2 badge rounded px-6 py-4 lg:py-6 lg:px-10 hover:bg-white hover:text-black hover:animate-pulse">
+            <img className="w-3 lg:w-7" src={Css} alt="" />
+            <span className="text-[10px] lg:text-lg">CSS</span>
           </div>
         </motion.dev>
         <motion.dev
@@ -79,13 +79,13 @@ const Skill = () => {
             bounceStiffness: 100,
           }}
         >
-          <div className="flex gap-2 badge rounded py-6 px-6 hover:bg-white hover:text-black hover:animate-pulse">
+          <div className="flex gap-2 badge rounded px-3 py-4 lg:py-6 lg:px-6 hover:bg-white hover:text-black hover:animate-pulse">
             <img
-              className="w-7"
+              className="w-3 lg:w-7"
               src={Javascript}
               alt=""
             />
-            <span className="text-lg">Javascript</span>
+            <span className="text-[10px] lg:text-lg">Javascript</span>
           </div>
         </motion.dev>
         <motion.dev
@@ -103,13 +103,13 @@ const Skill = () => {
             bounceStiffness: 100,
           }}
         >
-          <div className="flex gap-2 badge rounded py-6 px-12 hover:bg-white hover:text-black hover:animate-pulse">
+          <div className="flex gap-2 badge rounded py-4 px-6 lg:py-6 lg:px-12 hover:bg-white hover:text-black hover:animate-pulse">
             <img
-              className="w-7"
+              className="w-3 lg:w-7"
               src={Php}
               alt=""
             />
-            <span className="text-lg">PHP</span>
+            <span className="text-[10px] lg:text-lg">PHP</span>
           </div>
         </motion.dev>
         <motion.dev
@@ -127,13 +127,13 @@ const Skill = () => {
             bounceStiffness: 100,
           }}
         >
-          <div className="flex gap-2 badge rounded py-6 px-6 hover:bg-white hover:text-black hover:animate-pulse">
+          <div className="flex gap-2 badge rounded px-3 py-4 lg:py-6 lg:px-6 hover:bg-white hover:text-black hover:animate-pulse">
             <img
-              className="w-7"
+              className="w-3 lg:w-7"
               src={Codeigniter}
               alt=""
             />
-            <span className="text-lg">Codeigniter</span>
+            <span className="text-[10px] lg:text-lg">Codeigniter</span>
           </div>
         </motion.dev>
         <motion.dev
@@ -151,13 +151,13 @@ const Skill = () => {
             bounceStiffness: 100,
           }}
         >
-          <div className="flex gap-2 badge rounded py-6 px-9 hover:bg-white hover:text-black hover:animate-pulse">
+          <div className="flex gap-2 badge rounded py-4 px-5 lg:py-6 lg:px-9 hover:bg-white hover:text-black hover:animate-pulse">
             <img
-              className="w-7"
+              className="w-3 lg:w-7"
               src={Laravel}
               alt=""
             />
-            <span className="text-lg">Laravel</span>
+            <span className="text-[10px] lg:text-lg">Laravel</span>
           </div>
         </motion.dev>
         <motion.dev
@@ -175,9 +175,9 @@ const Skill = () => {
             bounceStiffness: 100,
           }}
         >
-          <div className="flex gap-2 badge rounded py-6 px-10 hover:bg-white hover:text-black hover:animate-pulse">
-            <img className="w-7" src={Vue} alt="" />
-            <span className="text-lg">Vue</span>
+          <div className="flex gap-2 badge rounded px-6 py-4 lg:py-6 lg:px-10 hover:bg-white hover:text-black hover:animate-pulse">
+            <img className="w-3 lg:w-7" src={Vue} alt="" />
+            <span className="text-[10px] lg:text-lg">Vue</span>
           </div>
         </motion.dev>
         <motion.dev
@@ -195,9 +195,9 @@ const Skill = () => {
             bounceStiffness: 100,
           }}
         >
-          <div className="flex gap-2 badge rounded py-6 px-10 hover:bg-white hover:text-black hover:animate-pulse">
-            <img className="w-7" src={React} alt="" />
-            <span className="text-lg">React</span>
+          <div className="flex gap-2 badge rounded px-6 py-4 lg:py-6 lg:px-10 hover:bg-white hover:text-black hover:animate-pulse">
+            <img className="w-3 lg:w-7" src={React} alt="" />
+            <span className="text-[10px] lg:text-lg">React</span>
           </div>
         </motion.dev>
         <motion.dev
@@ -215,9 +215,9 @@ const Skill = () => {
             bounceStiffness: 100,
           }}
         >
-          <div className="flex gap-2 badge rounded py-6 px-10 hover:bg-white hover:text-black hover:animate-pulse">
-            <img className="w-7" src={Mysql} alt="" />
-            <span className="text-lg">Mysql</span>
+          <div className="flex gap-2 badge rounded px-5 py-4 lg:py-6 lg:px-10 hover:bg-white hover:text-black hover:animate-pulse">
+            <img className="w-3 lg:w-7" src={Mysql} alt="" />
+            <span className="text-[10px] lg:text-lg">Mysql</span>
           </div>
         </motion.dev>
         <motion.dev
@@ -235,9 +235,9 @@ const Skill = () => {
             bounceStiffness: 100,
           }}
         >
-          <div className="flex gap-2 badge rounded py-6 px-10 hover:bg-white hover:text-black hover:animate-pulse">
-            <img className="w-7" src={Tailwind} alt="" />
-            <span className="text-lg">Tailwind</span>
+          <div className="flex gap-2 badge rounded px-5 py-4 lg:py-6 lg:px-10 hover:bg-white hover:text-black hover:animate-pulse">
+            <img className="w-3 lg:w-7" src={Tailwind} alt="" />
+            <span className="text-[10px] lg:text-lg">Tailwind</span>
           </div>
         </motion.dev>
         <motion.dev
@@ -256,9 +256,9 @@ const Skill = () => {
             type: "spring"
           }}
         >
-          <div className="flex gap-2 badge rounded py-6 px-6 hover:bg-white hover:text-black hover:animate-pulse">
-            <img className="w-7" src={Bootstrap} alt="" />
-            <span className="text-lg">Bootstrap</span>
+          <div className="flex gap-2 badge rounded py-4 px-3 lg:py-6 lg:px-6 hover:bg-white hover:text-black hover:animate-pulse">
+            <img className="w-3 lg:w-7" src={Bootstrap} alt="" />
+            <span className="text-[10px] lg:text-lg">Bootstrap</span>
           </div>
         </motion.dev>
       </div>

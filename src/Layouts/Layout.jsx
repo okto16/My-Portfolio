@@ -29,7 +29,7 @@ const Layout = () => {
         backgroundImage: backgroundImage,
       }}
     >
-      <div className="relative px-32 container z-10">
+      <div className="relative px-3 lg:px-32 container z-10">
         <Navbar />
         <div className="content mt-12">
           <Outlet />

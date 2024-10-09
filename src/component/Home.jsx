@@ -20,7 +20,7 @@ const Home = () => {
   return (
     <div>
       <h1>
-        <span className="typed font-medium uppercase text-3xl" ref={el} />
+        <span className="typed font-medium uppercase text-lg lg:text-3xl" ref={el} />
       </h1>
     </div>
   );

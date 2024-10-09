@@ -26,8 +26,8 @@ const About = () => {
       <div>
         <div className="flex flex-col items-center mb-10">
           <div className="flex text-center space-x-2">
-            <h1 className="text-3xl font-bold text-blue-500 mb-5">About</h1>
-            <h1 className="text-3xl font-bold mb-5">Me</h1>
+            <h1 className="text-lg lg:text-3xl font-bold text-blue-500 mb-5">About</h1>
+            <h1 className="text-lg lg:text-3xl font-bold mb-5">Me</h1>
           </div>
           <div ref={scrollRef}>
             <motion.div
@@ -43,7 +43,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="flex text-3xl font-bold mb-5 text-center space-x-2 justify-center">
+      <div className="flex text-lg lg:text-3xl font-bold mb-5 text-center space-x-2 justify-center">
         <h3>My</h3>
         <h3 className="text-blue-500">Journey</h3>
       </div>
@@ -58,7 +58,7 @@ const About = () => {
             viewport={{ once: false }}
             transition={{ duration: 1, ease: "easeInOut" }}
           >
-            <div className="timeline-start timeline-box">
+            <div className="timeline-start timeline-box text-sm lg:text-base">
               <h3>2019 - 2023</h3>
               <h2 className="font-bold">
                 Started my study at University Amikom Yogyakarta
@@ -110,7 +110,7 @@ const About = () => {
             viewport={{ once: false }}
             transition={{ duration: 1, ease: "easeInOut" }}
           >
-            <div className="timeline-end timeline-box">
+            <div className="timeline-end timeline-box text-sm lg:text-base">
               {" "}
               <h3>2023</h3>
               <h2 className="font-bold">Intrenship as fullstack developer</h2>
@@ -134,7 +134,7 @@ const About = () => {
             viewport={{ once: false }}
             transition={{ duration: 1, ease: "easeInOut" }}
           >
-            <div className="timeline-start timeline-box">
+            <div className="timeline-start timeline-box text-sm lg:text-base">
               <h3>2023</h3>
               <h2 className="font-bold">Intrenship as fullstack developer</h2>
               <p>
@@ -185,7 +185,7 @@ const About = () => {
             viewport={{ once: false }}
             transition={{ duration: 1, ease: "easeInOut" }}
           >
-            <div className="timeline-end timeline-box">
+            <div className="timeline-end timeline-box text-sm lg:text-base">
               <h3>2024 - Present</h3>
               <h2 className="font-bold">
                 Work as R&D in Quantum Infra Solusindo
@@ -199,7 +199,7 @@ const About = () => {
           <hr />
         </li>
       </ul>
-      <div className="text-3xl text-center flex gap-2 justify-center font-bold mb-5">
+      <div className="text-lg lg:text-3xl text-center flex gap-2 justify-center font-bold mb-5">
         <h3 className="text-blue-500">My</h3>
         <h3> Location</h3>
       </div>
