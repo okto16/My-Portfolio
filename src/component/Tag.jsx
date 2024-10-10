@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/no-unknown-property */
 import * as THREE from 'three'
 import { useEffect, useRef, useState } from 'react'
 import { Canvas, extend, useThree, useFrame } from '@react-three/fiber'
@@ -10,7 +12,7 @@ useGLTF.preload('/Scene.glb')
 useTexture.preload('https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/SOT1hmCesOHxEYxL7vkoZ/c57b29c85912047c414311723320c16b/band.jpg')
 export default function App() {
   return (
-    <Canvas camera={{ position: [0, 0, 13], fov: 25 }} className="size-[40rem]">
+    <Canvas camera={{ position: [0, 0, 13], fov: 25 }}>
       <ambientLight intensity={Math.PI} />
       <Physics interpolate gravity={[0, -40, 0]} timeStep={1 / 60}>
         <Band />

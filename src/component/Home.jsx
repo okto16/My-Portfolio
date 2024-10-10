@@ -1,6 +1,5 @@
 import React from "react";
 import Typed from "typed.js";
-import Lanyard from "./Lanyard";
 import Tag from "./Tag";
 const Home = () => {
   // Create reference to store the DOM element containing the animation
