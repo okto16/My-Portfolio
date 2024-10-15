@@ -1,5 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import avatar from "../assets/avatar.png";
+import Gundam from "../component/Gundam";
+import Gundam2 from "../component/Gundam2";
 const Navbar = () => {
   const navigate = useNavigate();
 
@@ -17,6 +19,12 @@ const Navbar = () => {
   };
   return (
     <div className="navbar py-16">
+        <div className="absolute -z-10 left-[-4rem]">
+          <Gundam />
+        </div>
+        <div className="absolute -z-10 right-[-4rem]">
+          <Gundam2 />
+        </div>
       <div className="flex-1 space-x-5">
         <div className="avatar">
           <div className="ring-primary ring-offset-base-100 w-5 lg:w-20 rounded-full ring ring-offset-2">

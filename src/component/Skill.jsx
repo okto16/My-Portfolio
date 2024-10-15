@@ -11,6 +11,7 @@ import React from "../assets/react.png";
 import Mysql from "../assets/mysql.png";
 import Tailwind from "../assets/tailwind.png";
 import Bootstrap from "../assets/bootstrap.png";
+import Progammer from "../component/lostProgrammer";
 // import Git from "../assets/git.png";
 
 const Skill = () => {
@@ -36,11 +37,7 @@ const Skill = () => {
           }}
         >
           <div className="flex gap-2 badge rounded px-5 py-4 lg:py-6 lg:px-10 hover:bg-white hover:text-black hover:animate-pulse">
-            <img
-              className="w-3 lg:w-7"
-              src={Html}
-              alt=""
-            />
+            <img className="w-3 lg:w-7" src={Html} alt="" />
             <span className="text-[10px] lg:text-lg">HTML</span>
           </div>
         </motion.dev>
@@ -80,11 +77,7 @@ const Skill = () => {
           }}
         >
           <div className="flex gap-2 badge rounded px-3 py-4 lg:py-6 lg:px-6 hover:bg-white hover:text-black hover:animate-pulse">
-            <img
-              className="w-3 lg:w-7"
-              src={Javascript}
-              alt=""
-            />
+            <img className="w-3 lg:w-7" src={Javascript} alt="" />
             <span className="text-[10px] lg:text-lg">Javascript</span>
           </div>
         </motion.dev>
@@ -104,11 +97,7 @@ const Skill = () => {
           }}
         >
           <div className="flex gap-2 badge rounded py-4 px-6 lg:py-6 lg:px-12 hover:bg-white hover:text-black hover:animate-pulse">
-            <img
-              className="w-3 lg:w-7"
-              src={Php}
-              alt=""
-            />
+            <img className="w-3 lg:w-7" src={Php} alt="" />
             <span className="text-[10px] lg:text-lg">PHP</span>
           </div>
         </motion.dev>
@@ -128,11 +117,7 @@ const Skill = () => {
           }}
         >
           <div className="flex gap-2 badge rounded px-3 py-4 lg:py-6 lg:px-6 hover:bg-white hover:text-black hover:animate-pulse">
-            <img
-              className="w-3 lg:w-7"
-              src={Codeigniter}
-              alt=""
-            />
+            <img className="w-3 lg:w-7" src={Codeigniter} alt="" />
             <span className="text-[10px] lg:text-lg">Codeigniter</span>
           </div>
         </motion.dev>
@@ -152,11 +137,7 @@ const Skill = () => {
           }}
         >
           <div className="flex gap-2 badge rounded py-4 px-5 lg:py-6 lg:px-9 hover:bg-white hover:text-black hover:animate-pulse">
-            <img
-              className="w-3 lg:w-7"
-              src={Laravel}
-              alt=""
-            />
+            <img className="w-3 lg:w-7" src={Laravel} alt="" />
             <span className="text-[10px] lg:text-lg">Laravel</span>
           </div>
         </motion.dev>
@@ -253,7 +234,7 @@ const Skill = () => {
             min: 0,
             max: 0,
             bounceStiffness: 100,
-            type: "spring"
+            type: "spring",
           }}
         >
           <div className="flex gap-2 badge rounded py-4 px-3 lg:py-6 lg:px-6 hover:bg-white hover:text-black hover:animate-pulse">
@@ -261,6 +242,9 @@ const Skill = () => {
             <span className="text-[10px] lg:text-lg">Bootstrap</span>
           </div>
         </motion.dev>
+      </div>
+      <div className="absolute z-0 inset-x-0">
+        <Progammer />
       </div>
     </>
   );
