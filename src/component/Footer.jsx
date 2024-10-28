@@ -3,8 +3,8 @@ import Github from "../assets/git.png";
 import Instagram from "../assets/instagram.png";
 const Footer = () => {
   const socialLinks = [
-    { href: "https://github.com/okto16", icon: Github, size: "w-4 h-4 sm:w-6 sm:h-6 lg:w-8 lg:h-8" },
-    { href: "https://www.instagram.com/oktorino_bagas/", icon: Instagram, size: "w-3 h-3 sm:w-5 sm:h-5 lg:w-6 lg:h-6" },
+    { href: "https://github.com/okto16", icon: Github, size: "w-5 h-5 sm:w-7 sm:h-7 lg:w-9 lg:h-9" },
+    { href: "https://www.instagram.com/oktorino_bagas/", icon: Instagram, size: "w-4 h-4 sm:w-6 sm:h-6 lg:w-7 lg:h-7" },
     { href: "https://www.linkedin.com/in/oktorino-bagas-aji-sudarno", icon: Linkedin, size: "w-4 h-4 sm:w-6 sm:h-6 lg:w-8 lg:h-8" }
   ];
 
