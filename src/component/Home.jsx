@@ -28,7 +28,7 @@ const Home = () => {
         className="typed font-medium uppercase text-sm sm:text-lg lg:text-2xl"
       />
       <div className="flex justify-center mt-8">
-        <div className="w-48 h-48 sm:w-64 sm:h-64 lg:w-96 lg:h-96">
+        <div className="w-full h-full">
           <Tag />
         </div>
       </div>
