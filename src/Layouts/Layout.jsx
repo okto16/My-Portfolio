@@ -10,6 +10,7 @@ import { useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import { Stars } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
+import { SpeedInsights } from '@vercel/speed-insights/react';
 const COLORS = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
 const Layout = () => {
   const color = useMotionValue(COLORS[0]);
@@ -31,6 +32,7 @@ const Layout = () => {
         <Navbar />
         <main className="mt-8 sm:mt-12 lg:mt-16">
           <Outlet />
+          <SpeedInsights />
         </main>
         <Footer />
       </div>
