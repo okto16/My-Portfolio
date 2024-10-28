@@ -24,16 +24,14 @@ const Layout = () => {
   });
   return (
     <motion.section
-      className="relative min-h-screen place-content-center overflow-hidden bg-gray-950 px-4 py-24 text-gray-200 "
-      style={{
-        backgroundImage: backgroundImage,
-      }}
+      className="relative min-h-screen w-full overflow-hidden bg-gray-950 text-gray-200"
+      style={{ backgroundImage }}
     >
-      <div className="relative px-3 lg:px-32 container z-10">
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <Navbar />
-        <div className="content mt-12">
+        <main className="mt-8 sm:mt-12 lg:mt-16">
           <Outlet />
-        </div>
+        </main>
         <Footer />
       </div>
       <div className="absolute inset-0 z-0">

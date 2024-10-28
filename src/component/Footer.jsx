@@ -2,35 +2,31 @@ import Linkedin from "../assets/linkedin.png";
 import Github from "../assets/git.png";
 import Instagram from "../assets/instagram.png";
 const Footer = () => {
+  const socialLinks = [
+    { href: "https://github.com/okto16", icon: Github, size: "w-4 h-4 sm:w-6 sm:h-6 lg:w-8 lg:h-8" },
+    { href: "https://www.instagram.com/oktorino_bagas/", icon: Instagram, size: "w-3 h-3 sm:w-5 sm:h-5 lg:w-6 lg:h-6" },
+    { href: "https://www.linkedin.com/in/oktorino-bagas-aji-sudarno", icon: Linkedin, size: "w-4 h-4 sm:w-6 sm:h-6 lg:w-8 lg:h-8" }
+  ];
+
   return (
-    <div className="mt-10 py-16 flex justify-center">
+    <footer className="py-8 sm:py-12 lg:py-16">
       <div className="text-center">
-        <h3 className="text-lg lg:text-3xl mb-5">Connect with me</h3>
-        <div className="justify-center flex space-x-5 items-center">
-          <a
-            href="https://github.com/okto16"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={Github} alt="" className="size-6 lg:size-10" />
-          </a>
-          <a
-            href="https://www.instagram.com/oktorino_bagas/profilecard/?igsh=dGQzemF4M3Q0MGN4"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={Instagram} className="size-3 lg:size-7" alt="" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/oktorino-bagas-aji-sudarno-177161292/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={Linkedin} className="size-4 lg:size-8" alt="" />
-          </a>
+        <h3 className="text-lg sm:text-2xl lg:text-3xl mb-4 sm:mb-6">Connect with me</h3>
+        <div className="flex justify-center items-center space-x-4 sm:space-x-6">
+          {socialLinks.map((link, index) => (
+            <a
+              key={index}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-transform hover:scale-110"
+            >
+              <img src={link.icon} alt="" className={link.size} />
+            </a>
+          ))}
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

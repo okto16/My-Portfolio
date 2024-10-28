@@ -2,7 +2,6 @@ import React from "react";
 import Typed from "typed.js";
 import Tag from "./Tag";
 const Home = () => {
-  // Create reference to store the DOM element containing the animation
   const el = React.useRef(null);
 
   React.useEffect(() => {
@@ -18,23 +17,21 @@ const Home = () => {
     });
 
     return () => {
-      // Destroy Typed instance during cleanup to stop animation
       typed.destroy();
     };
   }, []);
+
   return (
-    <div>
-      <h1>
-        <span
-          className="typed font-medium uppercase text-lg lg:text-2xl"
-          ref={el}
-        />
-        <div className="flex justify-center">
-          <div className="size-[10rem] lg:size-[40rem]">
-            <Tag />
-          </div>
+    <div className="text-center">
+      <span 
+        ref={el}
+        className="typed font-medium uppercase text-sm sm:text-lg lg:text-2xl"
+      />
+      <div className="flex justify-center mt-8">
+        <div className="w-48 h-48 sm:w-64 sm:h-64 lg:w-96 lg:h-96">
+          <Tag />
         </div>
-      </h1>
+      </div>
     </div>
   );
 };
