@@ -9,6 +9,11 @@ import bootstrap from "../assets/bootstrap.png";
 import ci from "../assets/ci.png";
 import php from "../assets/php.png";
 import react from "../assets/react.png";
+import midtransapi from "../assets/midtrans-api.png";
+import redesign from "../assets/Redesign Web.jpeg";
+import tokopupuk from "../assets/TokoPupuk.jpeg";
+
+
 
 const Project = () => {
   const projects = [
@@ -24,7 +29,7 @@ const Project = () => {
       title: "E-Commerce Midtrans API Sales",
       description:
         "Make a website ecommerce with Laravel and Vue Js and Midtrans API for payment",
-      image: dashboard,
+      image: midtransapi,
       tools: [laravel, vue, tailwind, mysql],
       github: "https://github.com/okto16/midtrans-api-sales",
       delay: 1.6,
@@ -32,7 +37,7 @@ const Project = () => {
     {
       title: "Library",
       description:
-        "  This Project is final from private class in eduwork, and i make it with HTML, PHP, Laravel, Yajra, and Bootstrap",
+        "This Project is final from private class in eduwork, and i make it with HTML, PHP, Laravel, Yajra, and Bootstrap",
       image: dashboard,
       tools: [laravel, php, bootstrap, mysql],
       github: "https://github.com/okto16/Library",
@@ -42,7 +47,7 @@ const Project = () => {
       title: "Redesign Landing ",
       description:
         "This Project from PBI(Project Based Intrenship) Qwords, and i make it with React JSX, Laravel, and Tailwindcss",
-      image: dashboard,
+      image: redesign,
       tools: [laravel, react, tailwind, mysql],
       github: "https://github.com/okto16/Rakamin-Qwords",
       delay: 1.8,
@@ -51,7 +56,7 @@ const Project = () => {
       title: "Web E-Commerce Toko Pupuk",
       description:
         "This Project is final task from my thesis, and i make it with HTML, CSS, PHP, CI3, and Bootstrap",
-      image: dashboard,
+      image: tokopupuk,
       tools: [bootstrap, ci, php, mysql],
       github: "https://github.com/okto16/web-project-ecommerce",
       delay: 1.6,
@@ -66,55 +71,62 @@ const Project = () => {
             key={project.title}
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
+            whileHover={{ 
+              scale: 1.05,
+              transition: { duration: 0.2 }
+            }}
             transition={{
               duration: 0.8,
               delay: project.delay,
               ease: [0, 0.71, 0.2, 1.01],
             }}
+            className="transform transition-transform duration-200"
           >
-            <div className="card bg-base-100 shadow-xl outline outline-1 rounded overflow-hidden h-full">
-              <figure className="relative aspect-video">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover"
-                />
-              </figure>
+            <a href={project.github}>
+              <div className="card bg-base-100 shadow-xl outline outline-1 rounded overflow-hidden h-full cursor-pointer">
+                <figure className="relative aspect-video">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover"
+                  />
+                </figure>
 
-              <div className="card-body p-4 md:p-6">
-                <h2 className="card-title text-sm md:text-lg lg:text-xl mb-2">
-                  {project.title}
-                </h2>
-                <p className="text-xs md:text-sm lg:text-base mb-4">
-                  {project.description}
-                </p>
+                <div className="card-body p-4 md:p-6">
+                  <h2 className="card-title text-sm md:text-lg lg:text-xl mb-2">
+                    {project.title}
+                  </h2>
+                  <p className="text-xs md:text-sm lg:text-base mb-4">
+                    {project.description}
+                  </p>
 
-                <div className="flex justify-between items-center mt-auto">
-                  <div className="flex gap-2 md:gap-3">
-                    {project.tools.map((tool, toolIndex) => (
+                  <div className="flex justify-between items-center mt-auto">
+                    <div className="flex gap-2 md:gap-3">
+                      {project.tools.map((tool, toolIndex) => (
+                        <img
+                          key={toolIndex}
+                          className="w-6 h-6 md:w-8 md:h-8"
+                          src={tool}
+                          alt="tool"
+                        />
+                      ))}
+                    </div>
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:opacity-80 transition-opacity"
+                    >
                       <img
-                        key={toolIndex}
                         className="w-6 h-6 md:w-8 md:h-8"
-                        src={tool}
-                        alt="tool"
+                        src={github}
+                        alt="GitHub"
                       />
-                    ))}
+                    </a>
                   </div>
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:opacity-80 transition-opacity"
-                  >
-                    <img
-                      className="w-6 h-6 md:w-8 md:h-8"
-                      src={github}
-                      alt="GitHub"
-                    />
-                  </a>
                 </div>
               </div>
-            </div>
+            </a>
           </motion.div>
         ))}
       </div>

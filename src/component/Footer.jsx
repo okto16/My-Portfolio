@@ -1,5 +1,5 @@
 import Linkedin from "../assets/linkedin.png";
-import Github from "../assets/git.png";
+import Github from "../assets/github-seeklogo.svg";
 import Instagram from "../assets/instagram.png";
 const Footer = () => {
   const socialLinks = [
