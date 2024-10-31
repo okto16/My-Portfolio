@@ -12,6 +12,7 @@ import react from "../assets/react.png";
 import midtransapi from "../assets/midtrans-api.png";
 import redesign from "../assets/Redesign Web.jpeg";
 import tokopupuk from "../assets/TokoPupuk.jpeg";
+import library from "../assets/Library.jpg"
 
 
 
@@ -38,7 +39,7 @@ const Project = () => {
       title: "Library",
       description:
         "This Project is final from private class in eduwork, and i make it with HTML, PHP, Laravel, Yajra, and Bootstrap",
-      image: dashboard,
+      image: library,
       tools: [laravel, php, bootstrap, mysql],
       github: "https://github.com/okto16/Library",
       delay: 1.4,

@@ -38,7 +38,7 @@ const Navbar = () => {
                 onClick={item.action}
                 className="btn btn-sm hover:bg-black rounded-lg px-3 py-1
                          text-xs sm:text-sm lg:text-base
-                         min-h-0 h-8 sm:h-10 lg:h-12"
+                         min-h-0 h-8 sm:h-9 lg:h-10"
               >
                 {item.label}
               </button>

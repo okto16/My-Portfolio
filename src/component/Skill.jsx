@@ -52,7 +52,6 @@ const Skill = () => {
       <div className="flex items-center justify-start w-32 sm:w-36 md:w-40 lg:w-44 h-8 sm:h-10 md:h-12 lg:h-14 badge rounded px-3 hover:bg-white hover:text-black hover:animate-pulse transform transition-transform hover:scale-105">
         <div className="flex items-center gap-2">
           <img 
-            // eslint-disable-next-line react/prop-types
             className={`w-4 sm:w-5 md:w-6 lg:w-7 ${skill.animate ? 'animate-spin-slow' : ''}`} 
             src={skill.icon} 
             alt={skill.name} 
