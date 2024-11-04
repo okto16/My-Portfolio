@@ -10,6 +10,7 @@ import { useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import { Stars } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
+import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 const COLORS = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
 const Layout = () => {
@@ -28,6 +29,7 @@ const Layout = () => {
       className="relative min-h-screen w-full overflow-hidden bg-gray-950 text-gray-200"
       style={{ backgroundImage }}
     >
+      <Analytics />
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <header>
           <Navbar />
