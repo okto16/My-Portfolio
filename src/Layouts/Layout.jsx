@@ -29,13 +29,13 @@ const Layout = () => {
       className="relative min-h-screen w-full overflow-hidden bg-gray-950 text-gray-200"
       style={{ backgroundImage }}
     >
-      <Analytics />
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <header>
           <Navbar />
         </header>
         <main className="mt-8 sm:mt-12 lg:mt-16">
           <Outlet />
+          <Analytics />
           <SpeedInsights />
         </main>
         <footer>
